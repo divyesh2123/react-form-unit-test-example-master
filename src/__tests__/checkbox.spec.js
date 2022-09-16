@@ -23,7 +23,7 @@ describe('<Checkbox />', function(){
     })
 
     it('should have the correct checkbox label', function(){
-        var label = "label";
+        var label = "active";
         const component = shallow(<CheckBox label={label}/>);
         expect(component.find('label').text()).toEqual(label);
     });
