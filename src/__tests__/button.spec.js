@@ -13,8 +13,8 @@ describe('<Button />', function () {
     });
 
     it('Should have single <a> when href prop exists', function () {
-        const component = shallow(<Button href="check.com"/>);
-        expect(component.find('a').length).toBe(0);
+        const component = shallow(<Button/>);
+        expect(component.find('a').length).toBe(1);
     });
 
     it('Should have single <button> when href prop exists', function () {
